@@ -1,0 +1,309 @@
+execve("./PhoneBook", ["./PhoneBook"], [/* 39 vars */]) = 0
+brk(0)                                  = 0xea8000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fafd5f4f000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY)      = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=117480, ...}) = 0
+mmap(NULL, 117480, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fafd5f32000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libncurses.so.5", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320v\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=138864, ...}) = 0
+mmap(NULL, 2234432, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fafd5b10000
+mprotect(0x7fafd5b31000, 2093056, PROT_NONE) = 0
+mmap(0x7fafd5d30000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x20000) = 0x7fafd5d30000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libtinfo.so.5", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300\323\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=167952, ...}) = 0
+mmap(NULL, 2264608, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fafd58e7000
+mprotect(0x7fafd590c000, 2093056, PROT_NONE) = 0
+mmap(0x7fafd5b0b000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x24000) = 0x7fafd5b0b000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/lib/x86_64-linux-gnu/libmenu.so.5", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200$\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=31480, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fafd5f31000
+mmap(NULL, 2126576, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fafd56df000
+mprotect(0x7fafd56e6000, 2093056, PROT_NONE) = 0
+mmap(0x7fafd58e5000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7fafd58e5000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/lib/x86_64-linux-gnu/libform.so.5", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@;\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=65256, ...}) = 0
+mmap(NULL, 2160480, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fafd54cf000
+mprotect(0x7fafd54dd000, 2097152, PROT_NONE) = 0
+mmap(0x7fafd56dd000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x7fafd56dd000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/lib/x86_64-linux-gnu/libstdc++.so.6", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\6\6\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=991600, ...}) = 0
+mmap(NULL, 3171520, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fafd51c8000
+mprotect(0x7fafd52b0000, 2097152, PROT_NONE) = 0
+mmap(0x7fafd54b0000, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe8000) = 0x7fafd54b0000
+mmap(0x7fafd54ba000, 83136, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fafd54ba000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\360>\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=530736, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fafd5f30000
+mmap(NULL, 2625768, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fafd4f46000
+mprotect(0x7fafd4fc7000, 2093056, PROT_NONE) = 0
+mmap(0x7fafd51c6000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x80000) = 0x7fafd51c6000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libgcc_s.so.1", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0p.\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=89056, ...}) = 0
+mmap(NULL, 2184824, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fafd4d30000
+mprotect(0x7fafd4d45000, 2097152, PROT_NONE) = 0
+mmap(0x7fafd4f45000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x15000) = 0x7fafd4f45000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300\357\1\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1595408, ...}) = 0
+mmap(NULL, 3709016, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fafd49a6000
+mprotect(0x7fafd4b26000, 2097152, PROT_NONE) = 0
+mmap(0x7fafd4d26000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x180000) = 0x7fafd4d26000
+mmap(0x7fafd4d2b000, 18520, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fafd4d2b000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\340\r\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=14768, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fafd5f2f000
+mmap(NULL, 2109696, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fafd47a2000
+mprotect(0x7fafd47a4000, 2097152, PROT_NONE) = 0
+mmap(0x7fafd49a4000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fafd49a4000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fafd5f2e000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fafd5f2c000
+arch_prctl(ARCH_SET_FS, 0x7fafd5f2c720) = 0
+mprotect(0x7fafd49a4000, 4096, PROT_READ) = 0
+mprotect(0x7fafd4d26000, 16384, PROT_READ) = 0
+mprotect(0x7fafd51c6000, 4096, PROT_READ) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fafd5f2b000
+mprotect(0x7fafd54b0000, 32768, PROT_READ) = 0
+mprotect(0x7fafd56dd000, 4096, PROT_READ) = 0
+mprotect(0x7fafd58e5000, 4096, PROT_READ) = 0
+mprotect(0x7fafd5b0b000, 16384, PROT_READ) = 0
+mprotect(0x7fafd5d30000, 4096, PROT_READ) = 0
+mprotect(0x7fafd5f51000, 4096, PROT_READ) = 0
+munmap(0x7fafd5f32000, 117480)          = 0
+brk(0)                                  = 0xea8000
+brk(0xec9000)                           = 0xec9000
+stat("/media/DATA/Dropbox/PhoneBook/phonebook_test", {st_mode=S_IFREG|0777, st_size=181, ...}) = 0
+open("/media/DATA/Dropbox/PhoneBook/phonebook_test", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0777, st_size=181, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fafd5f4e000
+read(3, "anwar,anwar,anwar,anwar,anwar\nan"..., 4096) = 181
+close(3)                                = 0
+munmap(0x7fafd5f4e000, 4096)            = 0
+ioctl(1, SNDCTL_TMR_TIMEBASE or TCGETS, 0x7fff4c937590) = -1 ENOSYS (Function not implemented)
+stat("/home/anwarelmakrahy/.terminfo", 0x7fff4c936510) = -1 ENOENT (No such file or directory)
+stat("/etc/terminfo", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+access("/etc/terminfo/x/xterm", R_OK)   = -1 ENOENT (No such file or directory)
+stat("/lib/terminfo", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+access("/lib/terminfo/x/xterm", R_OK)   = 0
+open("/lib/terminfo/x/xterm", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3315, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fafd5f4e000
+read(3, "\32\1)\0&\0\17\0\235\1Z\5xterm|xterm-debian|X"..., 4096) = 3315
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+munmap(0x7fafd5f4e000, 4096)            = 0
+ioctl(2, SNDCTL_TMR_TIMEBASE or TCGETS, 0x7fff4c937590) = -1 ENOSYS (Function not implemented)
+ioctl(2, SNDCTL_TMR_TIMEBASE or TCGETS, 0x7fff4c937540) = -1 ENOSYS (Function not implemented)
+ioctl(2, SNDCTL_TMR_TIMEBASE or TCGETS, 0x7fff4c937510) = -1 ENOSYS (Function not implemented)
+ioctl(2, SNDCTL_TMR_TIMEBASE or TCGETS, 0x7fff4c937570) = -1 ENOSYS (Function not implemented)
+ioctl(2, SNDCTL_TMR_TIMEBASE or TCGETS, 0x7fff4c937580) = -1 ENOSYS (Function not implemented)
+ioctl(1, SNDCTL_TMR_TIMEBASE or TCGETS, 0x7fff4c9375a0) = -1 ENOSYS (Function not implemented)
+ioctl(2, SNDCTL_TMR_TIMEBASE or TCGETS, 0x7fff4c937550) = -1 ENOSYS (Function not implemented)
+ioctl(2, SNDCTL_TMR_STOP or TCSETSW, {B0 -opost isig -icanon -echo ...}) = -1 ENOSYS (Function not implemented)
+rt_sigaction(SIGTSTP, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGTSTP, {0x7fafd5b258a0, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, NULL, 8) = 0
+rt_sigaction(SIGINT, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGINT, {0x7fafd5b257d0, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, NULL, 8) = 0
+rt_sigaction(SIGTERM, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGTERM, {0x7fafd5b257d0, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, NULL, 8) = 0
+rt_sigaction(SIGWINCH, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGWINCH, {0x7fafd5b257c0, [], SA_RESTORER, 0x7fafd49d84f0}, NULL, 8) = 0
+ioctl(2, SNDCTL_TMR_TIMEBASE or TCGETS, 0x7fff4c937680) = -1 ENOSYS (Function not implemented)
+ioctl(2, SNDCTL_TMR_TIMEBASE or TCGETS, 0x7fff4c937600) = -1 ENOSYS (Function not implemented)
+ioctl(2, SNDCTL_TMR_STOP or TCSETSW, {B0 -opost isig -icanon -echo ...}) = -1 ENOSYS (Function not implemented)
+write(1, "\33[?1049h\33[1;24r\33(B\33[m\33[4l\33[?7h\33["..., 44[?1049h[1;24r(B[m[4l[?7h[39;49m[?25l) = 44
+write(1, "\33[?1h\33=", 7[?1h=)              = 7
+rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, {0x7fafd5b258a0, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, 8) = 0
+write(1, "\33[39;49m\33[37m\33[40m\33[H\33[2J\33[37m\33["..., 267[39;49m[37m[40m[H[2J[37m[44m PhoneBook Project ~ Anwar Mohamed & Yasmine El-Habashi[K[22;2H(B[m[39;49m[37m[40mTotal Contacts: 6
+
+[37m[44m F1:Add  F2:Modify  F3:Delete  F4:Query  F5:Save  F6:Load  F7:Refresh  F8:Quit[K[22;33H(B[m[39;49m[37m[40m) = 267
+rt_sigaction(SIGTSTP, {0x7fafd5b258a0, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, NULL, 8) = 0
+rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, {0x7fafd5b258a0, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, 8) = 0
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+write(1, "\33[H\n\n \33(0\33[0m\33[39;49m\33[37m\33[40ml"..., 2064[H
+
+ (0[0m[39;49m[37m[40mlqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk(B[39;49m[37m[40m
+ (0[0m[39;49m[37m[40mx(B[0;7m[39;49m[37m[40manwar  anwar[4;27H(0[0m[39;49m[37m[40mx(B[39;49m[37m[40m[4;44H(0[0m[39;49m[37m[40m(B[0;1m[39;49m[37m[40m  Contact Details  [79G(0[0m[39;49m[37m[40mx(B[39;49m[37m[40m
+ (0[0m[39;49m[37m[40mx(B[39;49m[37m[40manwar  anwar[5;27H(0[0m[39;49m[37m[40mx(B[39;49m[37m[40m[79G(0[0m[39;49m[37m[40mx(B[39;49m[37m[40m
+ (0[0m[39;49m[37m[40mx(B[39;49m[37m[40manwar  anwar[6;27H(0[0m[39;49m[37m[40mx(B[39;49m[37m[40m (B[0;1m[34m[40mFirst Name:(B[m[39;49m[37m[40m (B[0;1m[39;49m[37m[40manwar[79G(0[0m[39;49m[37m[40mx(B[39;49m[37m[40m
+ (0[0m[39;49m[37m[40mx(B[39;49m[37m[40manwar  anwar[7;27H(0[0m[39;49m[37m[40mx(B[39;49m[37m[40m[79G(0[0m[39;49m[37m[40mx(B[39;49m[37m[40m
+ (0[0m[39;49m[37m[40mx(B[39;49m[37m[40manwar  anwar[8;27H(0[0m[39;49m[37m[40mx(B[39;49m[37m[40m (B[0;1m[34m[40mLast Name:(B[m[39;49m[37m[40m (B[0;1m[39;49m[37m[40manwar[79G(0[0m[39;49m[37m[40mx(B[39;49m[37m[40m
+ (0[0m[39;49m[37m[40mx(B[39;49m[37m[40manwarz anwar[9;27H(0[0m[39;49m[37m[40mx(B[39;49m[37m[40m[79G(0[0m[39;49m[37m[40mx(B[39;49m[37m[40m
+ (0[0m[39;49m[37m[40mx(B[39;49m[37m[40m[10;27H(0[0m[39;49m[37m[40mx(B[39;49m[37m[40m (B[0;1m[34m[40mStreet Address:(B[m[39;49m[37m[40m (B[0;1m[39;49m[37m[40manwar[79G(0[0m[39;49m[37m[40mx(B[39;49m[37m[40m
+ (0[0m[39;49m[37m[40mx(B[39;49m[37m[40m[11;27H(0[0m[39;49m[37m[40mx(B[39;49m[37m[40m[79G(0[0m[39;49m[37m[40mx(B[39;49m[37m[40m
+ (0[0m[39;49m[37m[40mx(B[39;49m[37m[40m[12;27H(0[0m[39;49m[37m[40mx(B[39;49m[37m[40m (B[0;1m[34m[40mCity:(B[m[39;49m[37m[40m (B[0;1m[39;49m[37m[40manwar[79G(0[0m[39;49m[37m[40mx(B[39;49m[37m[40m
+ (0[0m[39;49m[37) = 2064
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+write(1, "m\33[40mx\33(B\33[39;49m\33[37m\33[40m\33[13"..., 1190m[40mx(B[39;49m[37m[40m[13;27H(0[0m[39;49m[37m[40mx(B[39;49m[37m[40m[79G(0[0m[39;49m[37m[40mx(B[39;49m[37m[40m
+ (0[0m[39;49m[37m[40mx(B[39;49m[37m[40m[14;27H(0[0m[39;49m[37m[40mx(B[39;49m[37m[40m (B[0;1m[34m[40mPhone Number:(B[m[39;49m[37m[40m (B[0;1m[39;49m[37m[40manwar[79G(0[0m[39;49m[37m[40mx(B[39;49m[37m[40m
+ (0[0m[39;49m[37m[40mx(B[39;49m[37m[40m[15;27H(0[0m[39;49m[37m[40mx(B[39;49m[37m[40m[79G(0[0m[39;49m[37m[40mx(B[39;49m[37m[40m
+ (0[0m[39;49m[37m[40mx(B[39;49m[37m[40m[16;27H(0[0m[39;49m[37m[40mx(B[39;49m[37m[40m[79G(0[0m[39;49m[37m[40mx(B[39;49m[37m[40m
+ (0[0m[39;49m[37m[40mx(B[39;49m[37m[40m[17;27H(0[0m[39;49m[37m[40mx(B[39;49m[37m[40m[79G(0[0m[39;49m[37m[40mx(B[39;49m[37m[40m
+ (0[0m[39;49m[37m[40mx(B[39;49m[37m[40m[18;27H(0[0m[39;49m[37m[40mx(B[39;49m[37m[40m[79G(0[0m[39;49m[37m[40mx(B[39;49m[37m[40m
+ (0[0m[39;49m[37m[40mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj(B[39;49m[37m[40m[15d (0[0m[39;49m[37m[40m(B[39;49m[37m[40m) = 1190
+rt_sigaction(SIGTSTP, {0x7fafd5b258a0, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, NULL, 8) = 0
+rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, {0x7fafd5b258a0, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, 8) = 0
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+write(1, "\33[22;33H", 8[22;33H)               = 8
+rt_sigaction(SIGTSTP, {0x7fafd5b258a0, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, NULL, 8) = 0
+ioctl(2, SNDCTL_TMR_TIMEBASE or TCGETS, 0x7fff4c9374d0) = -1 ENOSYS (Function not implemented)
+ioctl(2, SNDCTL_TMR_TIMEBASE or TCGETS, 0x7fff4c937430) = -1 ENOSYS (Function not implemented)
+ioctl(2, SNDCTL_TMR_STOP or TCSETSW, {B0 -opost isig icanon -echo ...}) = -1 ENOSYS (Function not implemented)
+ioctl(2, SNDCTL_TMR_TIMEBASE or TCGETS, 0x7fff4c937430) = -1 ENOSYS (Function not implemented)
+ioctl(2, SNDCTL_TMR_STOP or TCSETSW, {B0 -opost isig -icanon -echo ...}) = -1 ENOSYS (Function not implemented)
+read(0, "\33", 1)                       = 1
+poll([{fd=0, events=POLLIN}], 1, 1000)  = 1 ([{fd=0, revents=POLLIN}])
+read(0, "O", 1)                         = 1
+poll([{fd=0, events=POLLIN}], 1, 1000)  = 1 ([{fd=0, revents=POLLIN}])
+read(0, "B", 1)                         = 1
+rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, {0x7fafd5b258a0, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, 8) = 0
+poll([{fd=0, events=POLLIN}], 1, 0)     = 1 ([{fd=0, revents=POLLIN}])
+write(1, "\r\n", 2
+)                     = 2
+rt_sigaction(SIGTSTP, {0x7fafd5b258a0, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, NULL, 8) = 0
+ioctl(2, SNDCTL_TMR_TIMEBASE or TCGETS, 0x7fff4c937490) = -1 ENOSYS (Function not implemented)
+ioctl(2, SNDCTL_TMR_STOP or TCSETSW, {B0 -opost -isig -icanon -echo ...}) = -1 ENOSYS (Function not implemented)
+rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, {0x7fafd5b258a0, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, 8) = 0
+write(1, "\33[15d ", 6[15d )                 = 6
+rt_sigaction(SIGTSTP, {0x7fafd5b258a0, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, NULL, 8) = 0
+ioctl(2, SNDCTL_TMR_TIMEBASE or TCGETS, 0x7fff4c9374d0) = -1 ENOSYS (Function not implemented)
+ioctl(2, SNDCTL_TMR_TIMEBASE or TCGETS, 0x7fff4c937430) = -1 ENOSYS (Function not implemented)
+ioctl(2, SNDCTL_TMR_STOP or TCSETSW, {B0 -opost isig icanon -echo ...}) = -1 ENOSYS (Function not implemented)
+ioctl(2, SNDCTL_TMR_TIMEBASE or TCGETS, 0x7fff4c937430) = -1 ENOSYS (Function not implemented)
+ioctl(2, SNDCTL_TMR_STOP or TCSETSW, {B0 -opost isig -icanon -echo ...}) = -1 ENOSYS (Function not implemented)
+read(0, "\33", 1)                       = 1
+poll([{fd=0, events=POLLIN}], 1, 1000)  = 1 ([{fd=0, revents=POLLIN}])
+read(0, "O", 1)                         = 1
+poll([{fd=0, events=POLLIN}], 1, 1000)  = 1 ([{fd=0, revents=POLLIN}])
+read(0, "S", 1)                         = 1
+write(1, "\7", 1)                       = 1
+read(0, "a", 1)                         = 1
+read(0, "n", 1)                         = 1
+read(0, "w", 1)                         = 1
+read(0, "a", 1)                         = 1
+read(0, "r", 1)                         = 1
+read(0, "\n", 1)                        = 1
+rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, {0x7fafd5b258a0, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, 8) = 0
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+write(1, "\33[24d\10", 6[24d)               = 6
+rt_sigaction(SIGTSTP, {0x7fafd5b258a0, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, NULL, 8) = 0
+ioctl(2, SNDCTL_TMR_TIMEBASE or TCGETS, 0x7fff4c937490) = -1 ENOSYS (Function not implemented)
+ioctl(2, SNDCTL_TMR_STOP or TCSETSW, {B0 -opost -isig -icanon -echo ...}) = -1 ENOSYS (Function not implemented)
+rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, {0x7fafd5b258a0, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, 8) = 0
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+write(1, "\33[15d ", 6[15d )                 = 6
+rt_sigaction(SIGTSTP, {0x7fafd5b258a0, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, NULL, 8) = 0
+rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, {0x7fafd5b258a0, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, 8) = 0
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+rt_sigaction(SIGTSTP, {0x7fafd5b258a0, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, NULL, 8) = 0
+rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, {0x7fafd5b258a0, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, 8) = 0
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+rt_sigaction(SIGTSTP, {0x7fafd5b258a0, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, NULL, 8) = 0
+rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, {0x7fafd5b258a0, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, 8) = 0
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+rt_sigaction(SIGTSTP, {0x7fafd5b258a0, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, NULL, 8) = 0
+rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, {0x7fafd5b258a0, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, 8) = 0
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+rt_sigaction(SIGTSTP, {0x7fafd5b258a0, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, NULL, 8) = 0
+rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, {0x7fafd5b258a0, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, 8) = 0
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+rt_sigaction(SIGTSTP, {0x7fafd5b258a0, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, NULL, 8) = 0
+ioctl(2, SNDCTL_TMR_TIMEBASE or TCGETS, 0x7fff4c9374d0) = -1 ENOSYS (Function not implemented)
+ioctl(2, SNDCTL_TMR_TIMEBASE or TCGETS, 0x7fff4c937430) = -1 ENOSYS (Function not implemented)
+ioctl(2, SNDCTL_TMR_STOP or TCSETSW, {B0 -opost isig icanon -echo ...}) = -1 ENOSYS (Function not implemented)
+ioctl(2, SNDCTL_TMR_TIMEBASE or TCGETS, 0x7fff4c937430) = -1 ENOSYS (Function not implemented)
+ioctl(2, SNDCTL_TMR_STOP or TCSETSW, {B0 -opost isig -icanon -echo ...}) = -1 ENOSYS (Function not implemented)
+read(0, "\n", 1)                        = 1
+rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, {0x7fafd5b258a0, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, 8) = 0
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+write(1, "\33[24d\10", 6[24d)               = 6
+rt_sigaction(SIGTSTP, {0x7fafd5b258a0, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, NULL, 8) = 0
+ioctl(2, SNDCTL_TMR_TIMEBASE or TCGETS, 0x7fff4c937490) = -1 ENOSYS (Function not implemented)
+ioctl(2, SNDCTL_TMR_STOP or TCSETSW, {B0 -opost -isig -icanon -echo ...}) = -1 ENOSYS (Function not implemented)
+rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, {0x7fafd5b258a0, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, 8) = 0
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+write(1, "\33[15d ", 6[15d )                 = 6
+rt_sigaction(SIGTSTP, {0x7fafd5b258a0, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, NULL, 8) = 0
+ioctl(2, SNDCTL_TMR_TIMEBASE or TCGETS, 0x7fff4c9374d0) = -1 ENOSYS (Function not implemented)
+ioctl(2, SNDCTL_TMR_TIMEBASE or TCGETS, 0x7fff4c937430) = -1 ENOSYS (Function not implemented)
+ioctl(2, SNDCTL_TMR_STOP or TCSETSW, {B0 -opost isig icanon -echo ...}) = -1 ENOSYS (Function not implemented)
+ioctl(2, SNDCTL_TMR_TIMEBASE or TCGETS, 0x7fff4c937430) = -1 ENOSYS (Function not implemented)
+ioctl(2, SNDCTL_TMR_STOP or TCSETSW, {B0 -opost isig -icanon -echo ...}) = -1 ENOSYS (Function not implemented)
+read(0, "\n", 1)                        = 1
+rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, {0x7fafd5b258a0, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, 8) = 0
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+write(1, "\33[24d\10", 6[24d)               = 6
+rt_sigaction(SIGTSTP, {0x7fafd5b258a0, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, NULL, 8) = 0
+ioctl(2, SNDCTL_TMR_TIMEBASE or TCGETS, 0x7fff4c937490) = -1 ENOSYS (Function not implemented)
+ioctl(2, SNDCTL_TMR_STOP or TCSETSW, {B0 -opost -isig -icanon -echo ...}) = -1 ENOSYS (Function not implemented)
+rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, {0x7fafd5b258a0, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, 8) = 0
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+write(1, "\33[15d ", 6[15d )                 = 6
+rt_sigaction(SIGTSTP, {0x7fafd5b258a0, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, NULL, 8) = 0
+ioctl(2, SNDCTL_TMR_TIMEBASE or TCGETS, 0x7fff4c9374d0) = -1 ENOSYS (Function not implemented)
+ioctl(2, SNDCTL_TMR_TIMEBASE or TCGETS, 0x7fff4c937430) = -1 ENOSYS (Function not implemented)
+ioctl(2, SNDCTL_TMR_STOP or TCSETSW, {B0 -opost isig icanon -echo ...}) = -1 ENOSYS (Function not implemented)
+ioctl(2, SNDCTL_TMR_TIMEBASE or TCGETS, 0x7fff4c937430) = -1 ENOSYS (Function not implemented)
+ioctl(2, SNDCTL_TMR_STOP or TCSETSW, {B0 -opost isig -icanon -echo ...}) = -1 ENOSYS (Function not implemented)
+read(0, "\n", 1)                        = 1
+rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, {0x7fafd5b258a0, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, 8) = 0
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+write(1, "\33[24d\10", 6[24d)               = 6
+rt_sigaction(SIGTSTP, {0x7fafd5b258a0, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, NULL, 8) = 0
+ioctl(2, SNDCTL_TMR_TIMEBASE or TCGETS, 0x7fff4c937490) = -1 ENOSYS (Function not implemented)
+ioctl(2, SNDCTL_TMR_STOP or TCSETSW, {B0 -opost -isig -icanon -echo ...}) = -1 ENOSYS (Function not implemented)
+rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, {0x7fafd5b258a0, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, 8) = 0
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+write(1, "\33[15d ", 6[15d )                 = 6
+rt_sigaction(SIGTSTP, {0x7fafd5b258a0, [], SA_RESTORER|SA_RESTART, 0x7fafd49d84f0}, NULL, 8) = 0
+ioctl(2, SNDCTL_TMR_TIMEBASE or TCGETS, 0x7fff4c9374d0) = -1 ENOSYS (Function not implemented)
+ioctl(2, SNDCTL_TMR_TIMEBASE or TCGETS, 0x7fff4c937430) = -1 ENOSYS (Function not implemented)
+ioctl(2, SNDCTL_TMR_STOP or TCSETSW, {B0 -opost isig icanon -echo ...}) = -1 ENOSYS (Function not implemented)
+ioctl(2, SNDCTL_TMR_TIMEBASE or TCGETS, 0x7fff4c937430) = -1 ENOSYS (Function not implemented)
+ioctl(2, SNDCTL_TMR_STOP or TCSETSW, {B0 -opost isig -icanon -echo ...}) = -1 ENOSYS (Function not implemented)
+read(0,  <unfinished ...>

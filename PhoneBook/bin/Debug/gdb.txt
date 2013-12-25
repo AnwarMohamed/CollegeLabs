@@ -1,0 +1,9 @@
+Starting program: /media/DATA/Dropbox/PhoneBook/bin/Debug/PhoneBook 
+
+Program received signal SIGABRT, Aborted.
+0x00007ffff6a83475 in raise () from /lib/x86_64-linux-gnu/libc.so.6
+A debugging session is active.
+
+	Inferior 1 [process 27625] will be killed.
+
+Quit anyway? (y or n) 

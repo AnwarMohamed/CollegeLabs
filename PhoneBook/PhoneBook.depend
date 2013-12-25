@@ -1,0 +1,110 @@
+# depslib dependency file v1.0
+1387933210 source:/media/DATA/Dropbox/PhoneBook/main.c
+	<curses.h>
+	<menu.h>
+	<string.h>
+	<stdio.h>
+	"logos.h"
+	"files.h"
+	"display.h"
+	"records.h"
+	"misc.h"
+
+1386450937 source:/media/DATA/Dropbox/PhoneBook/test.c
+	<menu.h>
+
+1386458738 /media/DATA/Dropbox/PhoneBook/logos.h
+
+1387905231 source:/media/DATA/Dropbox/PhoneBook/files.c
+	"files.h"
+	<unistd.h>
+	<sys/types.h>
+	<sys/mman.h>
+	<fcntl.h>
+	<sys/stat.h>
+
+1387842637 /media/DATA/Dropbox/PhoneBook/files.h
+	<stdio.h>
+	<stdlib.h>
+
+1387932975 source:/media/DATA/Dropbox/PhoneBook/display.c
+	"display.h"
+	<curses.h>
+	<menu.h>
+	<form.h>
+	"records.h"
+
+1387899745 /media/DATA/Dropbox/PhoneBook/display.h
+	<curses.h>
+	<menu.h>
+	"misc.h"
+
+1387895303 /media/DATA/Dropbox/PhoneBook/misc.h
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	<stdio.h>
+
+1387931675 source:/media/DATA/Dropbox/PhoneBook/records.c
+	"records.h"
+
+1387931436 /media/DATA/Dropbox/PhoneBook/records.h
+	"misc.h"
+	"files.h"
+
+1387926999 source:/media/DATA/Dropbox/PhoneBook/misc.c
+	"misc.h"
+
+1387932975 source:/media/Coding/Github/CollegeLabs/PhoneBook/display.c
+	"display.h"
+	<curses.h>
+	<menu.h>
+	<form.h>
+	"records.h"
+
+1387899745 /media/Coding/Github/CollegeLabs/PhoneBook/display.h
+	<curses.h>
+	<menu.h>
+	"misc.h"
+
+1387895303 /media/Coding/Github/CollegeLabs/PhoneBook/misc.h
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	<stdio.h>
+
+1387931436 /media/Coding/Github/CollegeLabs/PhoneBook/records.h
+	"misc.h"
+	"files.h"
+
+1387842637 /media/Coding/Github/CollegeLabs/PhoneBook/files.h
+	<stdio.h>
+	<stdlib.h>
+
+1387905231 source:/media/Coding/Github/CollegeLabs/PhoneBook/files.c
+	"files.h"
+	<unistd.h>
+	<sys/types.h>
+	<sys/mman.h>
+	<fcntl.h>
+	<sys/stat.h>
+
+1387933210 source:/media/Coding/Github/CollegeLabs/PhoneBook/main.c
+	<curses.h>
+	<menu.h>
+	<string.h>
+	<stdio.h>
+	"logos.h"
+	"files.h"
+	"display.h"
+	"records.h"
+	"misc.h"
+
+1386458738 /media/Coding/Github/CollegeLabs/PhoneBook/logos.h
+
+1387926999 source:/media/Coding/Github/CollegeLabs/PhoneBook/misc.c
+	"misc.h"
+
+1387931675 source:/media/Coding/Github/CollegeLabs/PhoneBook/records.c
+	"records.h"
+

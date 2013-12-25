@@ -1,0 +1,144 @@
+execve("./PhoneBook", ["./PhoneBook"], [/* 39 vars */]) = 0
+brk(0)                                  = 0x1788000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7feb5a936000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY)      = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=117480, ...}) = 0
+mmap(NULL, 117480, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7feb5a919000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libncurses.so.5", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320v\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=138864, ...}) = 0
+mmap(NULL, 2234432, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7feb5a4f7000
+mprotect(0x7feb5a518000, 2093056, PROT_NONE) = 0
+mmap(0x7feb5a717000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x20000) = 0x7feb5a717000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libtinfo.so.5", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300\323\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=167952, ...}) = 0
+mmap(NULL, 2264608, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7feb5a2ce000
+mprotect(0x7feb5a2f3000, 2093056, PROT_NONE) = 0
+mmap(0x7feb5a4f2000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x24000) = 0x7feb5a4f2000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/lib/x86_64-linux-gnu/libmenu.so.5", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200$\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=31480, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7feb5a918000
+mmap(NULL, 2126576, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7feb5a0c6000
+mprotect(0x7feb5a0cd000, 2093056, PROT_NONE) = 0
+mmap(0x7feb5a2cc000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7feb5a2cc000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/lib/x86_64-linux-gnu/libform.so.5", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@;\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=65256, ...}) = 0
+mmap(NULL, 2160480, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7feb59eb6000
+mprotect(0x7feb59ec4000, 2097152, PROT_NONE) = 0
+mmap(0x7feb5a0c4000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x7feb5a0c4000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/lib/x86_64-linux-gnu/libstdc++.so.6", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\6\6\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=991600, ...}) = 0
+mmap(NULL, 3171520, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7feb59baf000
+mprotect(0x7feb59c97000, 2097152, PROT_NONE) = 0
+mmap(0x7feb59e97000, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe8000) = 0x7feb59e97000
+mmap(0x7feb59ea1000, 83136, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7feb59ea1000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\360>\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=530736, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7feb5a917000
+mmap(NULL, 2625768, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7feb5992d000
+mprotect(0x7feb599ae000, 2093056, PROT_NONE) = 0
+mmap(0x7feb59bad000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x80000) = 0x7feb59bad000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libgcc_s.so.1", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0p.\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=89056, ...}) = 0
+mmap(NULL, 2184824, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7feb59717000
+mprotect(0x7feb5972c000, 2097152, PROT_NONE) = 0
+mmap(0x7feb5992c000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x15000) = 0x7feb5992c000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300\357\1\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1595408, ...}) = 0
+mmap(NULL, 3709016, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7feb5938d000
+mprotect(0x7feb5950d000, 2097152, PROT_NONE) = 0
+mmap(0x7feb5970d000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x180000) = 0x7feb5970d000
+mmap(0x7feb59712000, 18520, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7feb59712000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\340\r\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=14768, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7feb5a916000
+mmap(NULL, 2109696, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7feb59189000
+mprotect(0x7feb5918b000, 2097152, PROT_NONE) = 0
+mmap(0x7feb5938b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7feb5938b000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7feb5a915000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7feb5a913000
+arch_prctl(ARCH_SET_FS, 0x7feb5a913720) = 0
+mprotect(0x7feb5938b000, 4096, PROT_READ) = 0
+mprotect(0x7feb5970d000, 16384, PROT_READ) = 0
+mprotect(0x7feb59bad000, 4096, PROT_READ) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7feb5a912000
+mprotect(0x7feb59e97000, 32768, PROT_READ) = 0
+mprotect(0x7feb5a0c4000, 4096, PROT_READ) = 0
+mprotect(0x7feb5a2cc000, 4096, PROT_READ) = 0
+mprotect(0x7feb5a4f2000, 16384, PROT_READ) = 0
+mprotect(0x7feb5a717000, 4096, PROT_READ) = 0
+mprotect(0x7feb5a938000, 4096, PROT_READ) = 0
+munmap(0x7feb5a919000, 117480)          = 0
+brk(0)                                  = 0x1788000
+brk(0x17a9000)                          = 0x17a9000
+open("/media/DATA/Dropbox/PhoneBook/phonebook_test", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0777, st_size=114, ...}) = 0
+mmap(NULL, 114, PROT_READ|PROT_WRITE, MAP_PRIVATE, 3, 0) = 0x7feb5a935000
+ioctl(1, SNDCTL_TMR_TIMEBASE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+open("/dev/tty", O_RDWR|O_NOCTTY|O_NONBLOCK) = 4
+writev(4, [{"*** glibc detected *** ", 23}, {"./PhoneBook", 11}, {": ", 2}, {"malloc(): memory corruption", 27}, {": 0x", 4}, {"0000000001788050", 16}, {" ***\n", 5}], 7) = 88
+mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7feb51189000
+munmap(0x7feb51189000, 48721920)        = 0
+munmap(0x7feb58000000, 18386944)        = 0
+mprotect(0x7feb54000000, 135168, PROT_READ|PROT_WRITE) = 0
+write(4, "======= Backtrace: =========\n", 29) = 29
+writev(4, [{"/lib/x86_64-linux-gnu/libc.so.6", 31}, {"(", 1}, {"+0x", 3}, {"76d76", 5}, {")", 1}, {"[0x", 3}, {"7feb59403d76", 12}, {"]\n", 2}], 8) = 58
+writev(4, [{"/lib/x86_64-linux-gnu/libc.so.6", 31}, {"(", 1}, {"+0x", 3}, {"79de3", 5}, {")", 1}, {"[0x", 3}, {"7feb59406de3", 12}, {"]\n", 2}], 8) = 58
+writev(4, [{"/lib/x86_64-linux-gnu/libc.so.6", 31}, {"(", 1}, {"__libc_calloc", 13}, {"+0x", 3}, {"c2", 2}, {")", 1}, {"[0x", 3}, {"7feb59408172", 12}, {"]\n", 2}], 9) = 68
+writev(4, [{"/lib/x86_64-linux-gnu/libtinfo.s"..., 35}, {"(", 1}, {"_nc_setupterm", 13}, {"+0x", 3}, {"80", 2}, {")", 1}, {"[0x", 3}, {"7feb5a2dfb30", 12}, {"]\n", 2}], 9) = 72
+writev(4, [{"/lib/x86_64-linux-gnu/libncurses"..., 37}, {"(", 1}, {"newterm", 7}, {"+0x", 3}, {"6a", 2}, {")", 1}, {"[0x", 3}, {"7feb5a50874a", 12}, {"]\n", 2}], 9) = 68
+writev(4, [{"/lib/x86_64-linux-gnu/libncurses"..., 37}, {"(", 1}, {"initscr", 7}, {"+0x", 3}, {"63", 2}, {")", 1}, {"[0x", 3}, {"7feb5a505703", 12}, {"]\n", 2}], 9) = 68
+writev(4, [{"./PhoneBook", 11}, {"[0x", 3}, {"4035f7", 6}, {"]\n", 2}], 4) = 22
+writev(4, [{"./PhoneBook", 11}, {"[0x", 3}, {"403c0e", 6}, {"]\n", 2}], 4) = 22
+writev(4, [{"/lib/x86_64-linux-gnu/libc.so.6", 31}, {"(", 1}, {"__libc_start_main", 17}, {"+0x", 3}, {"fd", 2}, {")", 1}, {"[0x", 3}, {"7feb593abead", 12}, {"]\n", 2}], 9) = 72
+writev(4, [{"./PhoneBook", 11}, {"[0x", 3}, {"401b69", 6}, {"]\n", 2}], 4) = 22
+write(4, "======= Memory map: ========\n", 29) = 29
+open("/proc/self/maps", O_RDONLY)       = 5
+read(5, "00400000-00408000 r-xp 00000000 "..., 1024) = 1024
+write(4, "00400000-00408000 r-xp 00000000 "..., 1024) = 1024
+read(5, "                 /lib/x86_64-lin"..., 1024) = 1024
+write(4, "                 /lib/x86_64-lin"..., 1024) = 1024
+read(5, "                 /lib/x86_64-lin"..., 1024) = 1024
+write(4, "                 /lib/x86_64-lin"..., 1024) = 1024
+read(5, "m.so.5.9\n7feb5a0c6000-7feb5a0cd0"..., 1024) = 1024
+write(4, "m.so.5.9\n7feb5a0c6000-7feb5a0cd0"..., 1024) = 1024
+read(5, "eb5a518000-7feb5a717000 ---p 000"..., 1024) = 1024
+write(4, "eb5a518000-7feb5a717000 ---p 000"..., 1024) = 1024
+read(5, "00 r-xp 00000000 00:00 0        "..., 1024) = 141
+write(4, "00 r-xp 00000000 00:00 0        "..., 141) = 141
+read(5, "", 1024)                       = 0
+close(5)                                = 0
+rt_sigprocmask(SIG_UNBLOCK, [ABRT], NULL, 8) = 0
+gettid()                                = 31844
+tgkill(31844, 31844, SIGABRT)           = 0
+--- SIGABRT (Aborted) @ 0 (0) ---
++++ killed by SIGABRT +++
