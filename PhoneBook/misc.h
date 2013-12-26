@@ -18,4 +18,5 @@ typedef struct {
 int sub_string(char* s1, char* s2);
 char *trim(char *str);
 void f_capital(char* str);
+int is_numeric(char* str);
 #endif // MISC_H_INCLUDED

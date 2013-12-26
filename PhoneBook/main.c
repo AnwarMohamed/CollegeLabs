@@ -1,21 +1,38 @@
+/*
+ *
+ *  Copyright (C) 2013  Anwar Mohamed <anwarelmakrahy[at]gmail.com>
+ *
+ *  This program is free software; you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation; either version 2 of the License, or
+ *  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program; if not, write to Anwar Mohamed
+ *  anwarelmakrahy[at]gmail.com
+ *
+ */
+
 #include <curses.h>
 #include <menu.h>
 #include <string.h>
 #include <stdio.h>
 
 #define ARRAY_SIZE(a) (sizeof(a) / sizeof(a[0]))
-#define CTRLD 	4
 
 #include "logos.h"
 #include "files.h"
 #include "display.h"
 #include "records.h"
 #include "misc.h"
-//#include <signal.h>
 
 #define DEFAULT_PHONEBOOK_PATH "phonebook_test"
 
-void* resize_handler(int);
 
 void refresh_window(WINDOW* my_menu_win, MENU* my_menu, PHONEBOOK_ENTRY** filtered, int filtered_size, int entries_size)
 {
@@ -60,7 +77,7 @@ int main()
     init_pair(3, COLOR_YELLOW, COLOR_RED);
     init_pair(4, COLOR_YELLOW, COLOR_BLACK);
 
-    //show_splash_screen();
+    show_splash_screen();
 
     my_menu = new_menu(NULL);
     update_records_menu(my_menu, filtered, filtered_size);
@@ -137,8 +154,7 @@ int main()
             if (filtered_size > 0 && entries_size > 0 &&
                 show_delete_dialog(my_menu_win, (*filtered[item_index(current_item(my_menu))]).index, &entries, &entries_size))
             {
-                if (entries_size > 0)
-                    sort_records(entries, entries_size);
+                if (entries_size > 0) sort_records(entries, entries_size);
                 filtered = (PHONEBOOK_ENTRY**)realloc(filtered, entries_size * sizeof(PHONEBOOK_ENTRY*));
                 filtered_size = entries_size;
 
@@ -166,7 +182,6 @@ int main()
                 wrefresh(my_menu_win);
                 refresh_window(my_menu_win, my_menu, filtered, filtered_size, entries_size);
             }
-
             break;
 
         case KEY_F(5):
@@ -220,19 +235,9 @@ int main()
     unpost_menu(my_menu);
     free_menu(my_menu);
     cleanup_items_menu(my_menu);
-    //show_end_screen();
+    show_end_screen();
     endwin();
 
     //unload_record_file();
     return 0;
 }
-
-void*
-resize_handler(int sig)
-{
-    //int nh, nw;
-    //getmaxyx(stdscr, nh, nw);  /* get the new screen size */
-    //printf("%d : %d\n", nh, nw);
-}
-
-

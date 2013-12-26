@@ -3,6 +3,7 @@
 #include <menu.h>
 #include <form.h>
 #include "records.h"
+#include "misc.h"
 
 #define ARRAY_SIZE(a) (sizeof(a) / sizeof(a[0]))
 
@@ -69,7 +70,7 @@ show_modify_dialog(PHONEBOOK_ENTRY ** entries, int * entries_size, int index, ch
     set_menu_mark(my_menu, "");
 
     attron(COLOR_PAIR(1));
-    mvprintw(offsety + 1, offsetx + 1, "\t\t\t   Add a Contact\t\t     ");
+    mvprintw(offsety + 1, offsetx + 1, "\t\t\tModify a Contact\t\t     ");
     attroff(COLOR_PAIR(1));
 
     mvwprintw(add_window, 3, 2, "First Name:");
@@ -323,7 +324,7 @@ show_add_dialog(PHONEBOOK_ENTRY ** entries, int * entries_size, char* path)
 
                 //phonenumber
                 snprintf(path, 99, "%s", trim(field_buffer(field[2], 0)));
-                if ((tlen = strlen(path)) > 0 || !is_numeric(path)) {
+                if ((tlen = strlen(path)) > 0 && !is_numeric(path)) {
                     show_add_error(add_window, "Enter a valid Phone Number\t");
                     break;
                 }

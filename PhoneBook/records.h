@@ -5,6 +5,9 @@
 #define RECORDS_H_INCLUDED
 
 void
+delete_record(PHONEBOOK_ENTRY** entries, int* entries_size, int index);
+
+void
 get_records(char* file_buff, int fsize, int* entries_size, PHONEBOOK_ENTRY** records);
 
 void
@@ -15,6 +18,9 @@ search_records(PHONEBOOK_ENTRY* entries, int entries_size, char* str, int* resul
 
 void
 unload_record_file();
+
+void
+swap_record(PHONEBOOK_ENTRY *p1,PHONEBOOK_ENTRY *p2);
 
 void
 sort_records(PHONEBOOK_ENTRY* items, int size);

@@ -6,6 +6,12 @@
 #define DISPLAY_H_INCLUDED
 
 void
+show_end_screen();
+
+void
+show_modify_dialog(PHONEBOOK_ENTRY ** entries, int * entries_size, int index, char* tmp);
+
+void
 show_add_dialog(PHONEBOOK_ENTRY ** entries, int * entries_size, char* path);
 
 void

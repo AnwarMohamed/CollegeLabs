@@ -1,57 +1,40 @@
 #include "misc.h"
-
+#include <ctype.h>
 
 int sub_string(char* s1, char* s2) {
     int len1 = strlen(s1),
-    len2 = strlen(s2), i, j;
+    len2 = strlen(s2), i;
     if (len2 > len1) return 0;
-
-    for (i=0; i<len1; i++)
-        for (j=0; j<len2; j++)
-        {
-            //printf("%c %c\n", tolower(s1[i+j]), tolower(s2[j]));
-            if (tolower(s1[i+j]) == tolower(s2[j]) && j+1==len2)
-                return 1;
-
-            if (tolower(s1[i+j]) != tolower(s2[j]))
-                break;
-        }
-
-    //printf("wrong\n\n");
-    return 0;
+    for (i=0; i<len2; i++)
+        if (tolower(s1[i]) != tolower(s2[i]))
+            return 0;
+    return 1;
 }
 
 char *trim(char *str)
 {
     size_t len = 0;
-    char *frontp = str - 1;
-    char *endp = NULL;
+    char *start = str - 1;
+    char *end = NULL;
 
-    if( str == NULL )
-            return NULL;
-
-    if( str[0] == '\0' )
-            return str;
+    if(str == NULL) return NULL;
+    if(str[0] == '\0') return str;
 
     len = strlen(str);
-    endp = str + len;
+    end = str + len;
 
+    while(isspace(*(++start)));
+    while(isspace(*(--end)) && end != start);
 
-    while( isspace(*(++frontp)) );
-    while( isspace(*(--endp)) && endp != frontp );
+    if(str + len - 1 != end) *(end + 1) = '\0';
+    else if( start != str &&  end == start ) *str = '\0';
 
-    if( str + len - 1 != endp )
-            *(endp + 1) = '\0';
-    else if( frontp != str &&  endp == frontp )
-            *str = '\0';
-
-    endp = str;
-    if( frontp != str )
+    end = str;
+    if(start != str)
     {
-            while( *frontp ) *endp++ = *frontp++;
-            *endp = '\0';
+            while(*start) *end++ = *start++;
+            *end = '\0';
     }
-
 
     return str;
 }
@@ -77,5 +60,4 @@ void f_capital(char* str)
         for(i = 1; i < len; i++)
             str[i] = tolower(str[i]);
     }
-    return str;
 }
