@@ -46,6 +46,7 @@ int main()
     strings_table = (char**)malloc(0);
 
     load_record_file(path, &entries_size, &entries);
+    sort_records(entries, entries_size);
     filtered_size = entries_size;
     filtered = (PHONEBOOK_ENTRY**)realloc(filtered, filtered_size * sizeof(PHONEBOOK_ENTRY*));
 
@@ -93,7 +94,7 @@ int main()
 
         case KEY_F(1):
             show_add_dialog(&entries, &entries_size, tmp);
-            sort_records(entries, 0, entries_size-1);
+            sort_records(entries, entries_size);
 
             filtered = (PHONEBOOK_ENTRY**)realloc(filtered, entries_size * sizeof(PHONEBOOK_ENTRY*));
             filtered_size = entries_size;
@@ -113,8 +114,8 @@ int main()
         case KEY_F(2):
             if (entries_size > 0)
             {
-                show_modify_dialog(&entries, &entries_size, item_index(current_item(my_menu)), tmp);
-                sort_records(entries, 0, entries_size-1);
+                show_modify_dialog(&entries, &entries_size, (*filtered[item_index(current_item(my_menu))]).index, tmp);
+                sort_records(entries, entries_size);
 
                 filtered = (PHONEBOOK_ENTRY**)realloc(filtered, entries_size * sizeof(PHONEBOOK_ENTRY*));
                 filtered_size = entries_size;
@@ -134,10 +135,10 @@ int main()
 
         case KEY_F(3):
             if (filtered_size > 0 && entries_size > 0 &&
-                show_delete_dialog(my_menu_win, item_index(current_item(my_menu)), &entries, &entries_size))
+                show_delete_dialog(my_menu_win, (*filtered[item_index(current_item(my_menu))]).index, &entries, &entries_size))
             {
                 if (entries_size > 0)
-                    sort_records(entries, 0, entries_size-1);
+                    sort_records(entries, entries_size);
                 filtered = (PHONEBOOK_ENTRY**)realloc(filtered, entries_size * sizeof(PHONEBOOK_ENTRY*));
                 filtered_size = entries_size;
 
@@ -176,6 +177,7 @@ int main()
         case KEY_F(6):
             show_load_dialog(entries, &entries_size, path);
             load_record_file(path, &entries_size, &entries);
+            sort_records(entries, entries_size);
 
             filtered = (PHONEBOOK_ENTRY**)realloc(filtered, entries_size * sizeof(PHONEBOOK_ENTRY*));
             filtered_size = entries_size;

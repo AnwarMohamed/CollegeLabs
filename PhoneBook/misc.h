@@ -12,6 +12,7 @@ typedef struct {
     char* city;
     char* address;
     char* phone;
+    int index;
 } PHONEBOOK_ENTRY;
 
 int sub_string(char* s1, char* s2);

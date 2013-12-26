@@ -21,6 +21,7 @@ get_file_size (const char * file_name)
 char*
 load_file(const char* file_name, int* file_size)
 {
+    *file_size =0;
     unsigned int s;
     char * contents;
     size_t bytes_read;

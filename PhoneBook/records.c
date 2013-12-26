@@ -22,7 +22,8 @@ get_records(char* file_buff, int fsize, int* records_size, PHONEBOOK_ENTRY** rec
                     strings[strings_size-1] = &file_buff[i+1];
                 }
             }
-            else if (i+1 < fsize) {
+            else if (i+1 < fsize)
+            {
                 strings = (char**)realloc(strings, ++strings_size * sizeof(char*));
                 strings[strings_size-1] = &file_buff[i+1];
             }
@@ -47,9 +48,11 @@ get_records(char* file_buff, int fsize, int* records_size, PHONEBOOK_ENTRY** rec
 void
 load_record_file(char* filename, int* entries_size, PHONEBOOK_ENTRY** entries)
 {
-    unload_record_file();
+    if (strlen(filename) == 0) return;
     file_buff = load_file(filename, &file_size);
-    if (file_buff > 0) {
+    if (file_buff > 0 && file_size > 0)
+    {
+        unload_record_file();
         strcpy(file_name, filename);
         get_records(file_buff, file_size, entries_size, entries);
     }
@@ -59,11 +62,11 @@ void
 unload_record_file()
 {
 //    if (current_loaded_buf != 0) {
-        //printf("%s\n", current_loaded_buf );
+    //printf("%s\n", current_loaded_buf );
 //        unload_file(current_loaded_buf);
-        //current_loaded_buf = 0;
-        //memset(current_loaded_file, '\0', 1);
-  //  }
+    //current_loaded_buf = 0;
+    //memset(current_loaded_file, '\0', 1);
+    //  }
 }
 
 void
@@ -75,10 +78,10 @@ search_records(PHONEBOOK_ENTRY* entries, int entries_size, char* str, int* resul
     for (i=0; i<entries_size; i++)
     {
         if (sub_string(entries[i].fname, str) ||
-            sub_string(entries[i].lname, str) ||
-            sub_string(entries[i].city, str)  ||
-            sub_string(entries[i].phone, str) ||
-            sub_string(entries[i].address, str))
+                sub_string(entries[i].lname, str) ||
+                sub_string(entries[i].city, str)  ||
+                sub_string(entries[i].phone, str) ||
+                sub_string(entries[i].address, str))
         {
             *results = (PHONEBOOK_ENTRY**)realloc(*results, ++(*results_size) * sizeof(PHONEBOOK_ENTRY*));
             (*results)[*results_size - 1] = &entries[i];
@@ -125,36 +128,38 @@ save_records(char* filename, PHONEBOOK_ENTRY* entries, int size)
 }
 
 void
-sort_records(PHONEBOOK_ENTRY* items, int left, int right)
+swap_record(PHONEBOOK_ENTRY *p1,PHONEBOOK_ENTRY *p2)
 {
-  int i, j;
-  char *x;
-  PHONEBOOK_ENTRY temp;
+    tmp_entry = *p1;
+    *p1 = *p2;
+    *p2 = tmp_entry;
+}
 
-  i = left;
-  j = right;
-  x = items[(left+right)/2].lname;
-
-  do {
-    while((strcmp(items[i].lname,x) < 0) && (i < right)) {
-       i++;
+void
+sort_records(PHONEBOOK_ENTRY* items, int size)
+{
+    int i, j, status;
+    for(i=0; i<size; i++)
+    {
+        for(j=i+1; j<size; j++)
+        {
+            status = strcmp(items[i].lname,items[j].lname);
+            if(status > 0)
+                swap_record(&items[i], &items[j]);
+            else if (status == 0)
+            {
+                status = strcmp(items[i].fname,items[j].fname);
+                if(status > 0)
+                    swap_record(&items[i], &items[j]);
+                else if(status == 0)
+                {
+                    status = strcmp(items[i].phone,items[j].phone);
+                    if(status > 0)
+                        swap_record(&items[i], &items[j]);
+                }
+            }
+        }
     }
-    while((strcmp(items[j].lname,x) > 0) && (j > left)) {
-        j--;
-    }
-    if(i <= j) {
-      temp = items[i];
-      items[i] = items[j];
-      items[j] = temp;
-      i++;
-      j--;
-   }
-  } while(i <= j);
 
-  if(left < j) {
-     sort_records(items, left, j);
-  }
-  if(i < right) {
-     sort_records(items, i, right);
-  }
+    for (i=0; i<size; i++) items[i].index = i;
 }

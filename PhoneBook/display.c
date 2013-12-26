@@ -140,7 +140,7 @@ show_modify_dialog(PHONEBOOK_ENTRY ** entries, int * entries_size, int index, ch
 
                 //phonenumber
                 snprintf(tmp, 99, "%s", trim(field_buffer(field[2], 0)));
-                if ((tlen = strlen(tmp)) == 0 || !is_numeric(tmp)) {
+                if ((tlen = strlen(tmp)) > 0 && !is_numeric(tmp)) {
                     show_add_error(add_window, "Enter a valid Phone Number\t");
                     break;
                 }
@@ -323,7 +323,7 @@ show_add_dialog(PHONEBOOK_ENTRY ** entries, int * entries_size, char* path)
 
                 //phonenumber
                 snprintf(path, 99, "%s", trim(field_buffer(field[2], 0)));
-                if ((tlen = strlen(path)) == 0 || !is_numeric(path)) {
+                if ((tlen = strlen(path)) > 0 || !is_numeric(path)) {
                     show_add_error(add_window, "Enter a valid Phone Number\t");
                     break;
                 }
@@ -352,7 +352,7 @@ show_add_dialog(PHONEBOOK_ENTRY ** entries, int * entries_size, char* path)
                 strings_table = (char**)realloc(strings_table, ++strings_table_size * sizeof(char*));
                 strings_table[strings_table_size - 1] = tmp_string;
                 (*entries)[*entries_size].address = tmp_string;
-
+                (*entries)[*entries_size].index = *entries_size;
                 ++(*entries_size);
                 is_shown = 0;
             }
