@@ -23,8 +23,6 @@
 #include <string.h>
 #include <stdio.h>
 
-#define ARRAY_SIZE(a) (sizeof(a) / sizeof(a[0]))
-
 #include "logos.h"
 #include "files.h"
 #include "display.h"

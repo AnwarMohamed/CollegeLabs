@@ -1,3 +1,24 @@
+/*
+ *
+ *  Copyright (C) 2013  Anwar Mohamed <anwarelmakrahy[at]gmail.com>
+ *
+ *  This program is free software; you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation; either version 2 of the License, or
+ *  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program; if not, write to Anwar Mohamed
+ *  anwarelmakrahy[at]gmail.com
+ *
+ */
+
+
 #include "display.h"
 #include <curses.h>
 #include <menu.h>
@@ -114,7 +135,7 @@ show_modify_dialog(PHONEBOOK_ENTRY ** entries, int * entries_size, int index, ch
                 form_driver(add_form, REQ_VALIDATION);
 
                 //firstname
-                snprintf(tmp, 99, "%s", trim(field_buffer(field[0], 0)));
+                snprintf(tmp, 99, "%s", trim(remove_comma(field_buffer(field[0], 0))));
                 f_capital(tmp);
                 if ((tlen = strlen(tmp)) == 0) {
                     show_add_error(add_window, "Enter Firstname\t");
@@ -127,7 +148,7 @@ show_modify_dialog(PHONEBOOK_ENTRY ** entries, int * entries_size, int index, ch
                 (*entries)[index].fname = tmp_string;
 
                 //lastname
-                snprintf(tmp, 99, "%s", trim(field_buffer(field[1], 0)));
+                snprintf(tmp, 99, "%s", trim(remove_comma(field_buffer(field[1], 0))));
                 f_capital(tmp);
                 if ((tlen = strlen(tmp)) == 0) {
                     show_add_error(add_window, "Enter Lastname\t");
@@ -140,7 +161,7 @@ show_modify_dialog(PHONEBOOK_ENTRY ** entries, int * entries_size, int index, ch
                 (*entries)[index].lname = tmp_string;
 
                 //phonenumber
-                snprintf(tmp, 99, "%s", trim(field_buffer(field[2], 0)));
+                snprintf(tmp, 99, "%s", trim(remove_comma(field_buffer(field[2], 0))));
                 if ((tlen = strlen(tmp)) > 0 && !is_numeric(tmp)) {
                     show_add_error(add_window, "Enter a valid Phone Number\t");
                     break;
@@ -152,7 +173,7 @@ show_modify_dialog(PHONEBOOK_ENTRY ** entries, int * entries_size, int index, ch
                 (*entries)[index].phone = tmp_string;
 
                 //city
-                snprintf(tmp, 99, "%s", trim(field_buffer(field[3], 0)));
+                snprintf(tmp, 99, "%s", trim(remove_comma(field_buffer(field[3], 0))));
                 tlen = strlen(tmp);
                 f_capital(tmp);
                 tmp_string = (char*)malloc((tlen + 1) * sizeof(char));
@@ -162,7 +183,7 @@ show_modify_dialog(PHONEBOOK_ENTRY ** entries, int * entries_size, int index, ch
                 (*entries)[index].city = tmp_string;
 
                 //address
-                snprintf(tmp, 99, "%s", trim(field_buffer(field[4], 0)));
+                snprintf(tmp, 99, "%s", trim(remove_comma(field_buffer(field[4], 0))));
                 tlen = strlen(tmp);
                 f_capital(tmp);
                 tmp_string = (char*)malloc((tlen + 1) * sizeof(char));
@@ -272,7 +293,7 @@ show_add_dialog(PHONEBOOK_ENTRY ** entries, int * entries_size, char* path)
 
     (*entries) = (PHONEBOOK_ENTRY*)realloc((*entries),((*entries_size) + 1)* sizeof(PHONEBOOK_ENTRY));
 
-    int is_shown = 1, tlen;
+    int is_shown = 1, tlen, d=0;
     while(is_shown && (c = wgetch(add_window)))
     {
         switch(c)
@@ -297,12 +318,12 @@ show_add_dialog(PHONEBOOK_ENTRY ** entries, int * entries_size, char* path)
                 form_driver(add_form, REQ_VALIDATION);
 
                 //firstname
-                snprintf(path, 99, "%s", trim(field_buffer(field[0], 0)));
-                f_capital(path);
+                snprintf(path, 99, "%s", trim(remove_comma(field_buffer(field[0], 0))));
                 if ((tlen = strlen(path)) == 0) {
                     show_add_error(add_window, "Enter Firstname\t");
                     break;
                 }
+                f_capital(path);
                 tmp_string = (char*)malloc((tlen + 1) * sizeof(char));
                 memcpy(tmp_string, path, (tlen+ 1) * sizeof(char));
                 strings_table = (char**)realloc(strings_table, ++strings_table_size * sizeof(char*));
@@ -310,7 +331,7 @@ show_add_dialog(PHONEBOOK_ENTRY ** entries, int * entries_size, char* path)
                 (*entries)[*entries_size].fname = tmp_string;
 
                 //lastname
-                snprintf(path, 99, "%s", trim(field_buffer(field[1], 0)));
+                snprintf(path, 99, "%s", trim(remove_comma(field_buffer(field[1], 0))));
                 f_capital(path);
                 if ((tlen = strlen(path)) == 0) {
                     show_add_error(add_window, "Enter Lastname\t");
@@ -323,7 +344,7 @@ show_add_dialog(PHONEBOOK_ENTRY ** entries, int * entries_size, char* path)
                 (*entries)[*entries_size].lname = tmp_string;
 
                 //phonenumber
-                snprintf(path, 99, "%s", trim(field_buffer(field[2], 0)));
+                snprintf(path, 99, "%s", trim(remove_comma(field_buffer(field[2], 0))));
                 if ((tlen = strlen(path)) > 0 && !is_numeric(path)) {
                     show_add_error(add_window, "Enter a valid Phone Number\t");
                     break;
@@ -335,7 +356,7 @@ show_add_dialog(PHONEBOOK_ENTRY ** entries, int * entries_size, char* path)
                 (*entries)[*entries_size].phone = tmp_string;
 
                 //city
-                snprintf(path, 99, "%s", trim(field_buffer(field[3], 0)));
+                snprintf(path, 99, "%s", trim(remove_comma(field_buffer(field[3], 0))));
                 tlen = strlen(path);
                 f_capital(path);
                 tmp_string = (char*)malloc((tlen + 1) * sizeof(char));
@@ -345,7 +366,7 @@ show_add_dialog(PHONEBOOK_ENTRY ** entries, int * entries_size, char* path)
                 (*entries)[*entries_size].city = tmp_string;
 
                 //address
-                snprintf(path, 99, "%s", trim(field_buffer(field[4], 0)));
+                snprintf(path, 99, "%s", trim(remove_comma(field_buffer(field[4], 0))));
                 tlen = strlen(path);
                 f_capital(path);
                 tmp_string = (char*)malloc((tlen + 1) * sizeof(char));
